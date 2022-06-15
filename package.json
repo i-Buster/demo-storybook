@@ -8,7 +8,9 @@
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": "preact",
@@ -17,6 +19,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack4": "^6.5.7",
+    "@storybook/manager-webpack4": "^6.5.7",
+    "@storybook/preact": "^6.5.7",
+    "@storybook/testing-library": "0.0.11",
+    "babel-loader": "^8.2.5",
+    "core-js": "^3.22.8",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
